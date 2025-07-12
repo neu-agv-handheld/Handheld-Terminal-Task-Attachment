@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const service = axios.create({
-  timeout: 5000,
+  timeout: 5000, // 改为5000ms以匹配测试期望
 });
 
 service.interceptors.response.use(
